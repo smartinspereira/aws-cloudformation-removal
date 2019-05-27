@@ -1,0 +1,23 @@
+{
+  "name": "aws-cloudformation-removal",
+  "version": "0.1.0",
+  "description": "removes all / a specific cloudformation stack(s) in a given region",
+  "main": "purgeCloudformationStacks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smartinspereira/aws-cloudformation-removal.git"
+  },
+  "author": "Sergio Martins Pereira <s@x42.io> (https://github.com/smartinspereira)",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/smartinspereira/aws-cloudformation-removal/issues"
+  },
+  "homepage": "https://github.com/smartinspereira/aws-cloudformation-removal/#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "aws-sdk": "2.413.0"
+  }
+}
