@@ -3,7 +3,12 @@
 const purgeCloudformationStacks = require('./purgeCloudformationStacks')
 
 module.exports = (async () => {
-  const stackName = process.argv.length === 3 ? process.argv[2] : undefined
-  try { await purgeCloudformationStacks(stackName) }
+  const {
+    stackName,
+    region,
+    profile
+  } = require('minimist')(process.argv.slice(2))
+
+  try { await purgeCloudformationStacks({ stackName, region, profile }) }
   catch (error) { console.log(error) }
 })()

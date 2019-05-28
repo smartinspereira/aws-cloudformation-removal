@@ -1,6 +1,6 @@
 {
   "name": "aws-cloudformation-removal",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "removes all / a specific cloudformation stack(s) in a given region",
   "main": "purgeCloudformationStacks.js",
   "scripts": {
@@ -18,6 +18,7 @@
   "homepage": "https://github.com/smartinspereira/aws-cloudformation-removal/#readme",
   "devDependencies": {},
   "dependencies": {
-    "aws-sdk": "2.413.0"
+    "aws-sdk": "2.413.0",
+    "minimist": "1.2.0"
   }
 }

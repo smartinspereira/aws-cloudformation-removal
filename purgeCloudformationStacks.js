@@ -2,13 +2,9 @@
 
 const log = obj => console.log(JSON.stringify(obj, null, 2))
 
-async function purgeCloudformationStacks(
-  stackName,
-  profile = process.env.profile,
-  region = process.env.region
-) {
-  if (!profile) throw new Error('error::profile::isNull')
+async function purgeCloudformationStacks({ stackName, region, profile }) {
   if (!region) throw new Error('error::region::isNull')
+  if (!profile) throw new Error('error::profile::isNull')
 
   const aws = require('aws-sdk')
   const credentials = new aws.SharedIniFileCredentials({ profile })
