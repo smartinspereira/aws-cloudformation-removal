@@ -35,6 +35,9 @@ async function purgeCloudformationStacks({ stackName, region, profile }) {
             }
           ).promise()
 
+        // dirty hack to mitigate rate limits
+        await new Promise(res => setTimeout(res, 100))
+
         nextToken = listStackResourcesResponse.NextToken || null
 
         stackResources.push(
