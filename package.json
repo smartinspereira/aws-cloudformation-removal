@@ -19,6 +19,6 @@
   "devDependencies": {},
   "dependencies": {
     "aws-sdk": "2.413.0",
-    "minimist": "1.2.0"
+    "minimist": "1.2.3"
   }
 }
